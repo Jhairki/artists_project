@@ -705,6 +705,7 @@
   .left-column,
   .right-column {
     order: unset;
+    width: 100%;
   }
 
 

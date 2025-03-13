@@ -2,7 +2,7 @@ const navbarHTML = `
 <nav class="custom-navbar">
     <div class="logo">
         <a href="/pages/inicio/index.html">
-            <img src="/assets/images/general web/MARCA FINAL-06 3.png" alt="Logo">
+            <img src="assets/images/general web/MARCA FINAL-06 3.png" alt="Logo">
         </a>
     </div>
     <div class="hamburger" id="hamburger">

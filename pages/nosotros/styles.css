@@ -1,0 +1,333 @@
+/* SECCIÓN 2 - Hacer responsivo */
+.section-2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+}
+
+.container2 {
+    display: flex;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Imagen */
+.image-section2 {
+    flex: 0 0 30%;
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+}
+
+.image-section2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Contenido */
+.content-section2 {
+    flex: 1;
+    background: linear-gradient(to bottom, #646577, #1a1922);
+    display: flex;
+    flex-direction: column;
+    padding: 100px 40px;
+    padding-right: 10%;
+    text-align: left;
+    justify-content: center;
+}
+
+
+
+.section-51{
+    background-color: #21252e;
+    width: 100%;
+    height: 100%;
+}
+
+.section-5 {
+    position: relative;
+    padding: 50px 0; /* Espaciado vertical */
+}
+
+.container {
+    display: flex;
+    align-items: flex-start; 
+    
+}
+
+.content-column {
+    flex: 1;
+    color: white;
+    font-family: 'Gelasio', serif;
+    font-weight: 400;
+    border: 1 white solid; 
+}
+
+.text-container {
+    border: 2px solid white; /* Borde blanco alrededor del texto */
+    padding: 20px; /* Espaciado interno */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente para el texto */
+    color: white; /* Color del texto */
+}
+.image-section {
+    flex: 1; /* Ocupa el espacio disponible */
+    display: flex; /* Asegura que el contenedor de la imagen sea flexible */
+    justify-content: center; /* Centrar la imagen en su contenedor */
+    align-items: flex-start; /* Alinear la imagen al inicio del contenedor */
+    overflow: hidden; /* Oculta cualquier parte desbordante */
+}
+
+.tilt-image {
+    transition: transform 0.3s ease; /* Suavizar el movimiento */
+    width: 100%; /* Ajustar al contenedor */
+    height: 100%; /* Mantener proporción */
+    transform: rotate(-10deg); 
+    padding: 50px;
+}
+
+.image-section:hover .tilt-image {
+    transform: translateY(-10px) rotate(-10deg); /* Mover hacia arriba al pasar el mouse */
+}
+
+
+
+
+
+/* SECCIÓN 5 */
+.contenido-2 {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    width: 50%;
+    padding: 80px 0px;
+    margin: 0 auto;
+    color: white;
+}
+
+/* SECCIÓN 6 */
+.section-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background:#5c5c6d;
+    padding: 50px 0;
+}
+
+.section-img, .section-img2 {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Descripción */
+.col-descript {
+    flex: 0 0 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Imagen */
+.imagen-sobre-encima, .imagen-sobre-encima2 {
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+}
+
+.imagen-sobre-encima img, .imagen-sobre-encima2 img {
+    width: 120%;
+    height: auto;
+    position: relative;
+    left: -10%;
+}
+
+/* SECCIÓN 7 */
+.section-7 {
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 100%;
+    padding: 200px;
+    color: white;
+}
+
+.background-valores {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: grayscale(100%) brightness(50%);
+}
+
+.col-descript {
+    position: relative;
+    z-index: 1;
+    width: 70%;
+    margin: 0 auto;
+    color: white;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    /* SECCIÓN 2 - Convertir en columna */
+    .section-2 {
+        flex-direction: column;
+    }
+
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-section2 {
+        width: 100%;
+    }
+
+    .content-section2 {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    /* SECCIÓN 4 - Ajustar contenido */
+    .time-content {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    /* SECCIÓN 5 - Convertir en columna */
+    .contenido-2 {
+        width: 90%;
+        padding: 40px 20px;
+    }
+
+    /* SECCIÓN 6 - Convertir en columna */
+    .section-img, .section-img2 {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .col-descript {
+        flex: 1;
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .imagen-sobre-encima, .imagen-sobre-encima2 {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .imagen-sobre-encima img, .imagen-sobre-encima2 img {
+        width: 100%;
+        left: 0;
+    }
+
+    /* SECCIÓN 7 - Ajustar a columna */
+    .section-7 {
+        padding: 100px 20px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+
+    }
+}
+
+
+.value-text{
+    color: white;
+    font-family: 'Gelasio', serif;
+  font-weight: 400;  
+}
+
+.text-box{
+    color: white;
+    font-family: 'Gelasio', serif;
+    font-weight: 400; 
+    font-style: italic; 
+}
+
+.section-4 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Coloca la imagen de fondo detrás del contenido */
+}
+
+.background-image img {
+    width: 100%;
+    height: 100%; /* Asegurar que la imagen cubra todo el fondo */
+    object-fit: cover; /* Mantener la proporción de la imagen */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.time-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    padding: 20px;
+    color: white; /* Color del texto */
+    text-align: center; /* Centrar texto en las columnas */
+    position: relative; /* Para que las imágenes no salgan de este contenedor */
+}
+
+.time-column {
+    flex: 1 1 30%; /* Se expanden y contraen a un 30% del ancho */
+    min-width: 250px; /* Ancho mínimo para columnas en pantallas pequeñas */
+    margin: 10px; /* Espacio entre columnas */
+}
+
+.white-image {
+    filter: brightness(0) invert(1); /* Cambiar la imagen a blanco */
+    max-width: 100%; /* Asegurar que la imagen no se desborde */
+    height: auto; /* Mantener la proporción de la imagen */
+    object-fit: contain; /* Asegurar que la imagen mantenga su proporción */
+}
+
+@media (max-width: 768px) {
+    .time-column {
+        flex: 1 1 100%; /* En pantallas pequeñas, las columnas ocupan el 100% */
+        margin: 5px 0; /* Espacio vertical entre columnas */
+    }
+
+    .background-image img {
+        height: auto; /* Ajustar la altura en pantallas pequeñas */
+    }
+}
+
+
+
+

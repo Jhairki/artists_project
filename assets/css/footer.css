@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:wght@400;700&display=swap');
+
+.custom-footer {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 20px 20px;
+  font-family: 'Gelasio', serif;
+  border-top: 1.5cm solid #bc193b; /* Borde superior de 3 cm color salmón */
+}
+
+.footer-container {
+  max-width: 900px; /* Ajusta el ancho según sea necesario */
+  margin: 0 auto;
+  padding: 0 15px;
+  margin-top: 40px;
+}
+
+.logo-section {
+  text-align: left;
+}
+
+.logo-section img {
+  width: 150px;
+  height: auto;
+  padding: 10px;
+  display: block;
+}
+
+.logo-section h1 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.section h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.contact-links a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  transition: color 0.3s;
+}
+
+.contact-links a:hover {
+  color: #dc3545;
+}
+
+.icon-container {
+  width: 30px;
+  height: 30px;
+  background-color: #dc3545;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.contact-icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.menu-links {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-links li {
+  margin-bottom: 0.8rem;
+}
+
+.menu-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.menu-links a:hover {
+  color: #d4626d;
+}
+
+.cta-section p {
+  color: #cccccc;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #dc3545;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #c82333;
+  color: white;
+}
+
+.footer-quote {
+  text-align: center;
+  font-style: italic;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  font-size: 1rem;
+}
+
+/* Responsividad */
+@media (max-width: 868px) {
+  .footer-container {
+    text-align: center;
+  }
+  
+  .logo-section {
+    text-align: center;
+  }
+
+  .logo-section img {
+    width: 120px;
+    margin: 0 auto;
+  }
+  
+  .section {
+    margin-bottom: 2rem;
+  }
+
+  .contact-links a {
+    justify-content: center;
+  }
+
+  .menu-links {
+    padding: 0;
+  }
+
+  .footer-quote {
+    font-size: 0.9rem;
+  }
+}

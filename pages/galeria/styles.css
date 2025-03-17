@@ -3,6 +3,7 @@
 .section-2 {
     width: 100%;
     background-color: #21252e;
+    height: auto;
 }
 
 
@@ -19,12 +20,6 @@
     width: 100%;
     max-height: 100%;
     object-fit: cover;
-}
-
-.text-box{
-    height: 100px;
-    flex-direction: row;
-    gap: 20px
 }
 
 
@@ -320,15 +315,6 @@
     padding-bottom: 40px;
   }
   
-  .artist-description {
-    line-height: 1.6;
-    margin-top: 1rem;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    font-family: 'Gelasio', serif;
-    flex: 1;
-    overflow: hidden;
-  }
   
   .boton-artista {
     display: flex;
@@ -565,6 +551,7 @@
 .text-column {
     padding: 20px;
     color: white;
+    height: auto;
 }
 
 .text-column h1,
@@ -596,9 +583,7 @@
         grid-template-rows: auto; /* Asegurar que las filas se adapten automáticamente */
     }
 
-    .text-column {
-        padding: 15px;
-    }
+    
 
     .image-column img {
         height: 300px; /* Ajustar la altura de la imagen en pantallas pequeñas */
@@ -657,16 +642,28 @@
     transform: rotate(45deg);
 }
 
-.description {
-    display: none;
-    padding-top: 10px;
-    font-size: 16px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    color: black;
-}
 
-.description.show {
-    display: block;
-    opacity: 1;
-} 
+
+
+
+@media (max-width: 350px) {
+    .images{
+        width: 100%;
+        height: 100%;
+    }
+
+    .text-size {
+        transform: scale(0.5);
+    }
+
+    .container {
+        flex-direction: column;
+    
+    }
+
+    .image-section {
+        order:2;
+        width: 100%;
+    }
+
+}

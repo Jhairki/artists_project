@@ -426,9 +426,11 @@
 }
 
 .section-final {
-  white: 100%;
-  background-color: #43444d;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("/assets/images/habitacion-muchas-pinturas-enmarcadas-pared_1036536-9353.jpg");
+  background-size: cover;
 }
+
 
 .border-top::before {
   content: "";

@@ -426,20 +426,6 @@
 }
 
 
-
-
-.border-top::before {
-  content: "";
-  position: absolute;
-  top: -3px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60%;
-  height: 4px;
-  background-color: #5c5c6d;
-  z-index: 1;
-}
-
 /* Corrección para el primer grid - Sección 3 */
 .section-3 {
   display: flex;
@@ -671,11 +657,6 @@
     width: 100%;
   }
 
-  .container {
-    order: 2;
-    padding: 15px;
-    margin-top: 30px;
-  }
 
   .grid-item img {
     width: 100%;
@@ -748,13 +729,6 @@
     font-size: 0.9rem;
   }
 
-
-  .description {
-    font-size: 12px;
-    text-align: center;
-    padding-top: 70px;
-    margin: 0px;
-  }
 
   .artistas-section {
     padding: 10px;

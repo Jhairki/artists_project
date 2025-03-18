@@ -236,11 +236,17 @@ strong, .bold {
   }
 
   .description {
-    width: 100%;
-    height: 100%;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 70px;
+    margin: 0px;
   }
 
   .custom-button {
     margin-top: 10px;
+  }
+
+  .text-column {
+    width: 100%;
   }
 }

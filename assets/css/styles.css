@@ -215,7 +215,20 @@ strong, .bold {
   .text-overlay {
     position: absolute;
     bottom: 0px;
+    text-align: right;
+  }
+
+  .textpositiongal {
+    position: absolute;
+    bottom: 0px;
     right: -80px;
+    text-align: right;
+  }
+
+  .textpositionobras {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
     text-align: right;
   }
 
@@ -249,4 +262,11 @@ strong, .bold {
   .text-column {
     width: 100%;
   }
+
+  .primario {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+  }
+
 }

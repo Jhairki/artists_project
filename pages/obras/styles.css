@@ -391,3 +391,10 @@
         padding: 10px;
     }
 }
+
+@media (max-width: 680px) {
+    .section-1 {
+        width: 100%;
+        height: auto;
+    }
+}

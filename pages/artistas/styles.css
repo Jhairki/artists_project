@@ -1,3 +1,8 @@
+  .section-1 {
+    width: 100%;
+    height: auto;
+  }
+
 
 /* Section 2 */
 
@@ -17,7 +22,7 @@
   .section-2 .row {
       display: flex;
       align-items: center; 
-      gap: 20px;
+      gap: 10px;
   }
   
   .left-column {
@@ -32,6 +37,7 @@
       display: flex;
       flex-direction: column;
       justify-content: flex-end; 
+      margin-top: 60px;
   }
   
   .region-container {
@@ -834,6 +840,107 @@
   }
 }
 
+@media (max-width: 350px) {
+  
+  .right-column {
+    flex: 0.7; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 70px; 
+  }
+
+  .container {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .occidental {
+    writing-mode: initial;
+    text-orientation: initial;
+    transform: none;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: auto;
+  }
+
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .top-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 0px;
+  }
+
+  .section-3 {
+    width: 100%;
+    height: auto;
+  }
+
+  .city-info {
+    align-items: center;
+    padding: 20px;
+  }
+
+  .left-bar {
+    display: none;
+  }
+
+  .info-box {
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .container-3 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .carousel {
+    width: 100%;
+    height: auto;
+  }
+
+  .carousel-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .region-title {
+    width: 100%;
+    height: auto;
+    font-size: 0.5rem;
+  }
+
+  .region-title h1 {
+    font-size: 3rem;
+  }
+
+  .artist-description{
+    padding: 10px;
+  }
+
+}
 
 
 

@@ -254,7 +254,7 @@
                     console.log("No se encontraron imágenes para esta obra.");
                 }
 
-                const autores = JSON.parse(await fetch("../../artist.json").then(res => res.text()));
+                const autores = JSON.parse(await fetch("artist.json").then(res => res.text()));
                 const autor = autores.find(a => a.id === obra.id_autor);
 
                 if (autor) {

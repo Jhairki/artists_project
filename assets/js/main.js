@@ -1,13 +1,13 @@
 
 
-fetch('./components/navbar.html')
+fetch('components/navbar.html')
     .then(response => response.text())
     .then(data => {
         document.getElementById('navbar-container').innerHTML = data;
     })
     .catch(error => console.error('Error al cargar el navbar:', error));
 
-fetch('./components/footer.html')
+fetch('components/footer.html')
     .then(response => response.text())
     .then(data => {
         document.getElementById('footer-container').innerHTML = data;

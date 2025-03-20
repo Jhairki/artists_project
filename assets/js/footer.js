@@ -6,7 +6,7 @@ const footerHTML = `
                 
                 <div class="col-md-3 section logo-section">
                     <a href="index.htm">
-                        <img src="../assets/images/general web/marca en negativo-09.png" alt="Logo Galería de Arte">
+                        <img src="/artists_project/assets/images/general web/marca en negativo-09.png" alt="Logo Galería de Arte">
                     </a>
                 </div>
 
@@ -46,11 +46,11 @@ const footerHTML = `
                 <div class="col-md-3 section">
                     <h3>MENÚ</h3>
                     <ul class="menu-links">
-                        <li><a href="../galeria.html">Galería</a></li>
-                        <li><a href="../obras.html">Obras</a></li>
-                        <li><a href="../artistas.html">Artistas</a></li>
-                        <li><a href="../nosotros.html">Nosotros</a></li>
-                        <li><a href="../contacto.html">Contacto</a></li>
+                        <li><a href="/artists_project/galeria.html">Galería</a></li>
+                        <li><a href="/artists_project/obras.html">Obras</a></li>
+                        <li><a href="/artists_project/artistas.html">Artistas</a></li>
+                        <li><a href="/artists_project/nosotros.html">Nosotros</a></li>
+                        <li><a href="/artists_project/contacto.html">Contacto</a></li>
                     </ul>
                 </div>
 

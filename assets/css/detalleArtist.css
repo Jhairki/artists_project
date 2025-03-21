@@ -636,3 +636,11 @@
     width: 100%;
   }
 }
+
+
+@media (max-width: 350px) {
+  .titulo-tipo {
+    width: 100%;
+  }
+ 
+}
